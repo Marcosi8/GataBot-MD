@@ -19,7 +19,7 @@ if (!text) throw`️${lenguajeGB['smsAvisoMG']()}${mid.smsMalused7}\n${usedPrefi
   const ads = `*💫 • ${mid.buscador11}*\nhttps://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n`
   conn.sendMessage(m.chat, {image: {url: img}, caption: ads + res}, {quoted: m});
 };
-handler.command = ['cuevana', 'pelisplus'];
+handler.command = ['filme', 'pelisplus'];
 handler.level = 2
 export default handler;
 
