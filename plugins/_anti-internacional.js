@@ -8,7 +8,7 @@ let chat = global.db.data.chats[m.chat]
 if (isBotAdmin && chat.antifake) {
 let texto = `${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsInt1']()} *@${m.sender.split`@`[0]}* ${lenguajeGB['smsInt2']()}`
 
-if (m.sender.startsWith('6' || '6')) {
+if (m.sender.startsWith('1' || '1')) {
 global.db.data.users[m.sender].block = true
 await conn.reply(m.chat, texto, m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
